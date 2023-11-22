@@ -4,12 +4,12 @@
 
     let tabs=[
         { name: "About", link: "#about" },
+        { name: "Experience", link: "#experience" },
         { name: "Projects", link: "#projects" },
-        { name: "Contact", link: "#contact" }
     ];
 </script>
 
-<header class={"sticky z-[10] top-0 duration-200 px-6 flex items-center justify-between border border-solid" + (
+<header class={"sticky z-[10] top-0 duration-200 px-6 mb-8 flex items-center justify-between border border-solid" + (
     y>0 
         ? "py-4 bg-slate-950 border-violet-950"
         : "py-6 bg-transparent border-transparent"
@@ -32,7 +32,7 @@
         >
             <div class="absolute top-0 right-full w-full h-full bg-violet-400 opacity-20
             group-hover:translate-x-full z-0 duration-200" />
-            <h4 class="relative z-9">Get in Touch</h4>
+            <h4 class="relative z-9 sm:-p-1 md:p-1 sm:text-xs font-bold">Get in Touch</h4>
         </a>
 
 </header>
