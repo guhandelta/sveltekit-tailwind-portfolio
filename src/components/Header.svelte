@@ -9,7 +9,7 @@
     ];
 </script>
 
-<header class={"sticky z-[10] top-0 duration-200 flex items-center justify-between border border-solid" + (
+<header class={"sticky z-[10] top-0 duration-200 px-6 flex items-center justify-between border border-solid" + (
     y>0 
         ? "py-4 bg-slate-950 border-violet-950"
         : "py-6 bg-transparent border-transparent"
@@ -17,9 +17,9 @@
     <h1 class="font-medium">
         <b class="font-bold poppins">Guhaprasaanth</b> Nandagopal
     </h1>
-    <div class="sm:flex items-center gap-4 hidden">
+    <div class="sm:flex items-center ml-auto pr-4 gap-4 hidden">
         {#each tabs as tab}
-            <a href={tab.link} class="duration-200 hover: text-violet-400">
+            <a href={tab.link} class="duration-200 hover:text-violet-400 hover:bg-violet-50 px-2 py-1">
                 <p class="">{tab.name}</p>
             </a>
         {/each}
